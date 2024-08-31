@@ -1,0 +1,33 @@
+{
+	"name": "just_dice_roll_bot",
+	"version": "1.0.0",
+	"description": "request validation middleware for express",
+	"author": "Andrey Sakharov <caxap_8787@mail.ru> (https://www.linkedin.com/in/andrey-sakharov/)",
+	"license": "MIT",
+	"private": "true",
+	"main": "dist/bot.js",
+	"scripts": {
+		"build": "tsc",
+		"dev": "node --env-file=.env -r ts-node/register src/bot.ts",
+		"start": "node dist/bot.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prebuild": "rm -rf dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/muturgan/JustDiceRollBot.git"
+	},
+	"keywords": ["telegram", "bot", "d&d"],
+	"bugs": {
+		"url": "https://github.com/muturgan/JustDiceRollBot/issues"
+	},
+	"homepage": "https://github.com/muturgan/JustDiceRollBot#readme",
+	"dependencies": {
+		"grammy": "^1.29.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.16.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.5.4"
+	}
+}
